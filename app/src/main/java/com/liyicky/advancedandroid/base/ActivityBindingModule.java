@@ -1,4 +1,4 @@
-package com.liyicky.advancedandroid;
+package com.liyicky.advancedandroid.base;
 
 import android.app.Activity;
 

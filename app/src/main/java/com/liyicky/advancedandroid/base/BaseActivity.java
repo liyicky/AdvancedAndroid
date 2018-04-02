@@ -1,12 +1,15 @@
-package com.liyicky.advancedandroid;
+package com.liyicky.advancedandroid.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.liyicky.advancedandroid.di.Injector;
+import com.liyicky.advancedandroid.di.ScreenInjector;
 
 import java.util.UUID;
+
+import javax.inject.Inject;
 
 /**
  * Created by liyicky on 3/13/18.
@@ -15,6 +18,8 @@ import java.util.UUID;
 public abstract class BaseActivity extends AppCompatActivity {
 
     private static String INSTANCE_ID_KEY = "instance_id";
+
+    @Inject ScreenInjector screenInjector;
 
     private String instanceId;
 
@@ -46,5 +51,9 @@ public abstract class BaseActivity extends AppCompatActivity {
         if (isFinishing()) {
             Injector.clearComponent(this);
         }
+    }
+
+    public ScreenInjector getScreenInjector() {
+        return screenInjector;
     }
 }

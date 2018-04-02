@@ -1,10 +1,8 @@
-package com.liyicky.advancedandroid;
+package com.liyicky.advancedandroid.base;
 
 /**
  * Created by liyicky on 2/27/18.
  */
-
-import android.app.Activity;
 
 import javax.inject.Singleton;
 import dagger.Component;

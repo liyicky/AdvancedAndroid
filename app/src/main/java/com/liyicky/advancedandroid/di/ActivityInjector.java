@@ -3,8 +3,8 @@ package com.liyicky.advancedandroid.di;
 import android.app.Activity;
 import android.content.Context;
 
-import com.liyicky.advancedandroid.BaseActivity;
-import com.liyicky.advancedandroid.MyApplication;
+import com.liyicky.advancedandroid.base.BaseActivity;
+import com.liyicky.advancedandroid.base.MyApplication;
 
 import java.util.HashMap;
 import java.util.Map;

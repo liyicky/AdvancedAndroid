@@ -1,4 +1,4 @@
-package com.liyicky.advancedandroid;
+package com.liyicky.advancedandroid.base;
 
 /**
  * Created by liyicky on 2/27/18.
